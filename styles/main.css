@@ -4,11 +4,14 @@ ul.nav {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  padding-left: 5px;
+  padding-top: 5px;
 }
 
 li {
   float: left;
-  border-right:1px solid #bbb;
+  padding-right: 5px;
+  /*border-right:1px solid #bbb;*/
 }
 
 /*li.seasons {
@@ -46,6 +49,7 @@ li:last-child {
   text-align: center;
   padding: 14px 14px;
   text-decoration: none;
+  border-radius: 5px;
 }
 
 	table.tableizer-table {
@@ -71,6 +75,8 @@ li:last-child {
         height: 46px;
         border-radius: 50%;
         overflow: hidden;
+        background-color: rgba(204, 204, 204, 0.301);
+        
     }
 
 body {
@@ -182,4 +188,92 @@ body {
    color: white;
    padding: 5px;
    border-radius: 5px;
+}
+
+/*#indeximgbox {
+  background-color: rgba(204, 204, 204, 0.301);
+  border-radius: 100px;
+  background-size: auto;
+  align-content: center;
+}*/
+
+.indeximg {
+  max-width: 50%;
+  height: auto;
+  align-content: center;
+  text-align: center;
+  border-radius: 100px;
+  background-color: rgba(204, 204, 204, 0.301);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+  transition: .5s ease;
+  /*backface-visibility: hidden;*/
+}
+
+.container {
+  position: relative;
+  max-width: 50%;
+  height: auto;
+  align-content: center;
+  text-align: center;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .indeximg{
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.signup {
+  background-color: #BC0000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+
+.signup:hover {
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid #BC0000;
+}
+
+.signup:visited {
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid #BC0000;
+}
+
+.hublink {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
